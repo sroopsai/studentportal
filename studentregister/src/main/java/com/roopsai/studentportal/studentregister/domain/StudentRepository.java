@@ -7,9 +7,9 @@ public interface StudentRepository {
     Student save(Student student);
     Iterable<Student> findAll();
 
-    Optional<Student> find(Student student);
-    boolean exists(Student student);
-    void delete(Student student);
+    Optional<Student> find(String id);
+    boolean exists(String id);
+    void delete(String id);
 
 
 }
